@@ -9,7 +9,7 @@ https://nodejs.org/en/
 ### 2. 安装包依赖
 
 ```sh
-yarn
+npm install
 ```
 
 ### 3. 配置 API 地址
