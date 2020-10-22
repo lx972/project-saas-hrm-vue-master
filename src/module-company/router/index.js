@@ -26,7 +26,14 @@ export default [
         component: _import('company/pages/index'),
         name: 'company-index',
         meta: {title: '企业管理', icon: 'component', noCache: true}
-      }
+      },
+      {
+        //:id 表示给detail后面的路径标识为id，到时候就可以使用this.$route.params.id取到
+        path: 'detail/:id',
+        component: _import('company/components/enterprise'),
+        name: 'company-detail',
+        meta: {title: 'SaaS企业详情', icon: 'international', noCache: true}
+      },
     ]
   }
 ]
