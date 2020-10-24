@@ -1,0 +1,7 @@
+import {createAPI} from '@/utils/request'
+
+export const list = data => createAPI('/system/user', 'get', data)
+export const remove = data => createAPI(`/system/user/${data.id}`, 'delete', data)
+export const detail = data => createAPI(`/system/user/${data.id}`, 'get', data)
+export const update = data => createAPI(`/system/user/${data.id}`, 'put', data)
+export const add = data => createAPI(`/system/user`, 'post', data)

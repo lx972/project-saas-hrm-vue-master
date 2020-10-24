@@ -20,6 +20,7 @@ import dashboard from '@/module-dashboard/' // 面板
 import demo from '@/module-demo/' // 面板
 import company from '@/module-company/' // 企业
 import department from '@/module-department/' // 部门
+import employees from '@/module-employees/' // 员工
 
 import tools from './utils/common.js'
 Vue.prototype.$tools = tools
@@ -29,6 +30,7 @@ Vue.use(dashboard, store)
 Vue.use(demo, store)
 Vue.use(company, store)
 Vue.use(department, store)
+Vue.use(employees, store)
 
 
 /*
